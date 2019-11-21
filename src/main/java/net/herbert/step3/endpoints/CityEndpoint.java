@@ -20,4 +20,5 @@ public class CityEndpoint {
     }
 
     private final CityRepository cityRepository;
+
 }

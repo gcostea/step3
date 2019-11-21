@@ -8,7 +8,7 @@ public class City {
     @Id private String name;
     private String country;
     private String subcountry;
-    private String geonameid;
+    private Integer geonameid;
 
     public String getName() {
         return name;
@@ -28,10 +28,10 @@ public class City {
     public void setSubcountry(String subcountry) {
         this.subcountry = subcountry;
     }
-    public String getGeonameid() {
+    public Integer getGeonameid() {
         return geonameid;
     }
-    public void setGeonameid(String geonameid) {
+    public void setGeonameid(Integer geonameid) {
         this.geonameid = geonameid;
     }
 }
