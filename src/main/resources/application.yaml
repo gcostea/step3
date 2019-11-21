@@ -1,4 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:../../cities
+    url: jdbc:h2:file:/home/costea/Work/Arezzosky/TechHerbert2019/Data/cities
     username: test
+    password: ""
+    driver-class-name: org.h2.Driver

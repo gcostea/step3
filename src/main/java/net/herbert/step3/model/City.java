@@ -1,10 +1,14 @@
 package net.herbert.step3.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+
+@Table("cities")
 public class City {
-    private String name;
+    @Id private String name;
     private String country;
     private String subcountry;
-    private Integer geonameid;
+    private String geonameid;
 
     public String getName() {
         return name;
@@ -24,10 +28,10 @@ public class City {
     public void setSubcountry(String subcountry) {
         this.subcountry = subcountry;
     }
-    public Integer getGeonameid() {
+    public String getGeonameid() {
         return geonameid;
     }
-    public void setGeonameid(Integer geonameid) {
+    public void setGeonameid(String geonameid) {
         this.geonameid = geonameid;
     }
 }
